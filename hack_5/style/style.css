@@ -20,6 +20,7 @@ header{
 
 .status{
     display:flex;
+    margin-left: 10%;
 }
 
 .en-linea{
@@ -30,6 +31,7 @@ header{
 
 .company-name h3{
     font-weight: 200;
+    font-size: 2rem;
     
 }
 
@@ -48,7 +50,7 @@ header img{
 .hero{
     position:relative;
     background:none;
-    height: 500px;
+    height: 600px;
     width:100%;
 }
 
@@ -68,30 +70,36 @@ header img{
 }
 
 .green-stripe{
-    margin: 0 0 0.5rem 1.2rem;
+    margin: 0 0 0.5rem 2.5rem;
+    padding: 0.6rem 0 0.6rem 0;
     color:var(--footer-text);
     background-color: var(--green-stripe-foo);
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 200;
-    width:24rem;
+    width:46%;
 }
 
 .green-stripe h1{
-    margin:0;
+    margin: 0;
 }
 
 .first-line{
-    padding: 0.4rem 0 0.4rem 3rem;
-    margin-left:0.8rem;
-    width:13rem;
+    /* padding-left: 11%; */
+    margin-left:1rem;
+    width:30%;
+    text-align: end;    
+}
+
+.first-line h1{
+    margin-right: 2rem;
 }
 
 .second-line{
-    padding: 0.4rem 0 0.4rem 3rem;
+    text-align: end;
 }
 
 .third-line{
-    padding: 0.4rem 0 0.4rem 3rem;
+    text-align: center;
 }
 
 .black-stripe{
@@ -100,55 +108,88 @@ header img{
 
 .black-stripe p{
     margin:0;
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-size: 1.7rem;
+    font-weight:800;
     color:var(--footer-text);
 }
 
 .fourth-line{
-    margin: 2rem 0 0.3rem 1.2rem;
-    padding-left: 3rem;
-    width:24rem;
+    margin: 2rem 0 0.3rem 2.5rem;
+    padding-left: 10%;
+    width:34%;
 }
 
 .fith-line{
-    padding-left: 4rem;
-    margin-left: 2rem;
-    width:18rem;
-}
+    padding-left: 9.5%;
+    margin-left:3rem;
+    width:25%;
+}   
 
 /* Main content section */
 
 .main-content{
-    width:80%;
-    margin: 3rem auto;
+    width:75%;
+    margin: 5rem auto;
 }
 
 .main-content h1{
-    font-size: 2rem;   
+    font-size: 3rem;   
     margin-bottom: 0; 
+}
+
+.main-content p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 .services{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 2rem;
-    gap:20px;
+    gap:40px;
+}
+
+.services p{
+    font-size: 1.2rem;
+    margin-top: 0;
 }
 
 .service-icon{
     width: 40px;
     height: 40px;
-
 }
 
 .service-image{
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+}
+
+.services h2{
+    font-size: 2rem;
+    margin-left: 0.5rem;
 }
 
 .design-title, .development-title, .publishing-title{
     display:flex;
     align-items: center;
-    gap:10px
+}
+
+
+/* Footer section */
+
+footer{
+    background-color: var(--green-stripe-foo);
+    width:95%;
+    margin: 1rem auto;
+    display:flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
