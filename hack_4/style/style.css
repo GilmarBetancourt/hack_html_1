@@ -8,22 +8,25 @@ body{
     --bg-strips:#FFBD59;
 }
 
+/* HR line section */
+
 hr{
-    width:60px;
+    width:65px;
     margin: 0 auto;
     background-color: black;
-    height: 5px;
+    height: 8px;
     border-radius: 10px;
     margin-top: 5rem;
 }
 
+/*Sale banner section*/
 .sale-banner h1{
     color: var(--sale-fashion-text);
     text-align: center;
     font-family: "Ruda", serif;
-    font-size: 6rem;
+    font-size: 8rem;
     margin:0;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 15px;
 }
 
@@ -42,7 +45,7 @@ hr{
     font-size: 3rem;
     margin-top: 0;
     font-weight: 900;
-    margin-bottom: 0;
+    
 }
 
 p{
@@ -53,33 +56,51 @@ p{
     letter-spacing: 4px;
 }
 
-.content{
-    display: flex;
-    position:relative;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 8rem;
+.sale-banner{
+    margin-bottom: 8rem;
 }
 
-.bg-strips{
-    background-color: var(--bg-strips);
-    height: 1.6rem;
-    width: 90%;
-    margin-bottom: 1.5rem;
-    z-index: 1;
+
+/* Content section*/
+
+.content{
+    margin: 8rem 0 7rem 0;
+    height: 50%;
 }
 
 .product-container{
     display: flex;
+    position:relative;
     justify-content: center;
-    gap:10px;
+    gap:20px;
     align-items: center;
     flex-wrap: wrap;
-    position: absolute;
     z-index: 2;
     
 }
+
+
+.strip-box{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: 0 1rem;
+    z-index: -1;
+}
+
+.bg-strips{
+    background-color: var(--bg-strips);
+    height: 10%;
+    width: 90%;
+    margin-bottom: 3%;
+    
+}
+
+
 
 img{
     width: 100%;
@@ -88,11 +109,12 @@ img{
 }
 
 .product{
-    width: 170px;
-    height: 250px;
-    
-    
+    width: 20%;
+    height: 100%
 }
+
+/* Footer section */
+
 
 .product p, .footer p{
     letter-spacing: normal;
@@ -100,7 +122,8 @@ img{
 }
 
 .footer{
-    margin-top: 12rem;
+    margin: 10rem 0 5rem 0;
+    
 }
 
 .footer h1{
@@ -111,4 +134,24 @@ img{
     font-size: 2.2rem;
     letter-spacing: 4px;
     margin-bottom: 0;
+}
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .product{
+        width: 70%;
+        height: 800%;
+        margin-bottom: 2rem;
+    }
+
+    .bg-strips{
+        opacity: 0;
+        
+    }
+
 }
