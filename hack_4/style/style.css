@@ -1,0 +1,157 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --sale-fashion-text:#B88940;
+    --bg-strips:#FFBD59;
+}
+
+/* HR line section */
+
+hr{
+    width:65px;
+    margin: 0 auto;
+    background-color: black;
+    height: 8px;
+    border-radius: 10px;
+    margin-top: 5rem;
+}
+
+/*Sale banner section*/
+.sale-banner h1{
+    color: var(--sale-fashion-text);
+    text-align: center;
+    font-family: "Ruda", serif;
+    font-size: 8rem;
+    margin:0;
+    font-weight: 800;
+    letter-spacing: 15px;
+}
+
+.sale-banner h2, h3{
+    text-align: center;
+    font-family: "Ruda", serif;
+}
+
+.sale-banner h3{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+.sale-banner h2{
+    font-size: 3rem;
+    margin-top: 0;
+    font-weight: 900;
+    
+}
+
+p{
+    text-align: center;
+    font-family: "Catamaran", serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.sale-banner{
+    margin-bottom: 8rem;
+}
+
+
+/* Content section*/
+
+.content{
+    margin: 8rem 0 7rem 0;
+    height: 50%;
+}
+
+.product-container{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    
+}
+
+
+.strip-box{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: 0 1rem;
+    z-index: -1;
+}
+
+.bg-strips{
+    background-color: var(--bg-strips);
+    height: 10%;
+    width: 90%;
+    margin-bottom: 3%;
+    
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.product{
+    width: 20%;
+    height: 100%
+}
+
+/* Footer section */
+
+
+.product p, .footer p{
+    letter-spacing: normal;
+    margin-top: 0;
+}
+
+.footer{
+    margin: 10rem 0 5rem 0;
+    
+}
+
+.footer h1{
+    font-family: Open Sans;
+    font-weight: 800;
+    text-align: center;
+    color: var(--sale-fashion-text);
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+}
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .product{
+        width: 70%;
+        height: 800%;
+        margin-bottom: 2rem;
+    }
+
+    .bg-strips{
+        opacity: 0;
+        
+    }
+
+}

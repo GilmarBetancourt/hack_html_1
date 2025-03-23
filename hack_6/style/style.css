@@ -1,0 +1,198 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Inter", serif;
+}
+
+
+/* Hero */
+.hero{
+    display:flex;
+    background-image: url(/img/2.png);
+    background-size:cover;
+    background-position: center;
+    width:100%;
+    padding-top: 5%;
+    justify-content: center;
+    
+}
+
+.left-side{
+    width:35%;
+    height: 100%;
+
+    
+}
+
+.hero button{
+    background-color: black;
+    color:white;
+    border-radius: 28px;
+    padding: 12px 40px;
+    cursor:pointer;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+
+.left-side p{
+    font-size: 2rem;
+}
+
+/*Discount section*/
+
+.right-side{
+    display:flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items:end;
+    width:40%;
+    height: 100%;
+    
+}
+
+.discount-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/circle-svgrepo-com.svg);
+    background-size:100% 100%;
+    width:350px;
+    height:350px;
+    margin: 20px 10px 0 0;
+}
+
+.discount{
+    color:white;
+    text-align: center;
+    margin:0;
+}
+
+.discount-box h1{
+    font-size: 5rem; 
+}
+
+.discount-box h2{
+    font-size: 4rem;
+}
+
+/*Products section*/
+
+.products {
+    display: grid;
+    padding: 5rem 0 5rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 2rem;
+    width:80%;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.product img{
+    width:200px;
+    height: 300px;
+}
+
+.product-name, .newprice{
+    font-weight:bold;
+}
+
+.oldprice{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: grey;
+    margin-right:1rem;
+}
+
+.newprice, .oldprice{
+    display: inline;
+}
+
+/* Footer */
+
+.footer{
+    background-color: black;
+    color:white;
+    height: 10rem;
+    width:98%;
+    margin: 0 auto;
+    
+}
+
+
+.footer button{
+    background-color: #00BF63;
+    color:white;
+    border-radius: 28px;
+    padding: 1rem 2rem;
+    cursor:pointer;
+    font-size: 1.5rem;
+    margin: 3rem 0 0 18rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+        
+    }
+
+    .left-side {
+        width: 100%; /* Full width on mobile */
+        text-align: center; /* Center text */
+    }
+
+    .title {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .left-side p {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    .right-side {
+        width: 100%; /* Full width on mobile */
+        align-items: center; /* Center items */
+    }
+
+    .discount-box {
+        width: 200px; /* Adjusted width for mobile */
+        height: 200px; /* Adjusted height for mobile */
+        padding-bottom: 2rem;
+    }
+
+    .discount-box h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .discount-box h2 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+        width: 90%; /* Adjusted width for mobile */
+    }
+
+    .product img {
+        width: 150px; /* Smaller image size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .footer {
+        padding: 1rem 0; /* Padding for footer */
+    }
+
+    .footer button {
+        margin: 1rem auto; /* Center button */
+        display: block; /* Center button */
+    }
+}
